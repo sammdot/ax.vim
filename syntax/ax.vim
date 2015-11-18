@@ -21,7 +21,7 @@ hi def link axNumber		Number
 syn match axString			'\(\<C\s\+\)\@<=\'.\{,4}\''
 hi def link axString		String
 
-syn match axLabel			'^[A-Za-z0-9]\+:'
+syn match axLabel			'^\s*[A-Za-z0-9]\+:'
 hi def link axLabel			Identifier
 
 " Comments are defined relative to the end of the instruction
