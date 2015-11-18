@@ -13,9 +13,9 @@ hi def link axDataType		Statement
 
 syn match axNumber			'\(W\s\+\)\@<=[0-9]\+\>'
 syn match axNumber			'\(I\s\+\)\@<=\-\=[0-9]\+\>'
-syn match axNumber			'\(F\s\+\)\@<=\-\=[0-9]\+\(\.[0-9]*\)\=\>'
-syn match axNumber			'\(H\s\+\)\@<=[0-9A-F]\+\>'
-syn match axNumber			'\(B\s\+\)\@<=[01]\+\>'
+syn match axNumber			'\(F\s\+\)\@<=\-\=[0-9]\+\(\.[0-9]*\)\=\(e\-\=[0-9]\+\)\=\>'
+syn match axNumber			'\(H\s\+\)\@<=[0-9A-F]\{,8}\>'
+syn match axNumber			'\(B\s\+\)\@<=[01]\{,32}\>'
 hi def link axNumber		Number
 
 syn match axString			'\(C\s\+\)\@<=\'.\{,4}\''
