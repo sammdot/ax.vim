@@ -18,6 +18,9 @@ syn match axNumber			'\(H\s\+\)\@<=[0-9A-F]\+\>'
 syn match axNumber			'\(B\s\+\)\@<=[01]\+\>'
 hi def link axNumber		Number
 
+syn match axString			'\(C\s\+\)\@<=\'.\{,4}\''
+hi def link axString		String
+
 syn match axLabel			'^[A-Za-z0-9]\+:'
 hi def link axLabel			Identifier
 
