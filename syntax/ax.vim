@@ -25,7 +25,7 @@ syn match axLabel			'^[A-Za-z0-9]\+:'
 hi def link axLabel			Identifier
 
 " Comments are defined relative to the end of the instruction
-syn match axComment			'\([A-Z]\{1,3}\s\+[^\s]\+\s\+\)\@<=.*'
+syn match axComment			'\(^\([A-Za-z0-9]\+:\s\)\=\s*[A-Z]\{1,3}\s\+[^\s]\+\s\+\)\@<=.*'
 hi def link axComment		Comment
 
 let b:current_syntax = 'ax'
