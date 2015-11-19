@@ -4,7 +4,7 @@ if exists('b:current_syntax')
 	finish
 endif
 
-syn keyword axInstruction	LDA STA ADD SUB MUL DIV FLA FLS FLM FLD
+syn keyword axInstruction	LDA STA ADD SUB MUL DIV MOD FLA FLS FLM FLD
 syn keyword axInstruction	CIF CFI AND IOR XOR BUN BZE BSA BIN INP OUT
 hi def link axInstruction	Statement
 
